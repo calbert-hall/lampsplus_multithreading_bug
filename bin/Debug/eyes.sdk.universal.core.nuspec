@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Eyes.Sdk.Universal.Core</id>
+    <version>2.9.1</version>
+    <authors>Applitools</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>applitools_nuget_icon.png</icon>
+    <projectUrl>https://applitools.com/</projectUrl>
+    <description>Applitools Eyes adds automated visual validation to your automated tests.
+			With Applitools Eyes, you can automatically validate the correctness of your application's UI layout, content and appearance.
+			To learn more, visit https://applitools.com/ .</description>
+    <releaseNotes>### Updated
+- Updated Universal Server Version to 2.9.1
+- Copied Universal Server binaries in case when it does not exist (dotnet core issue)</releaseNotes>
+    <copyright>Applitools 2013</copyright>
+    <tags>applitools eyes</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="DotNetZip.Reduced" version="1.9.1.8" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.RuntimeInformation" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="DotNetZip.Reduced" version="1.9.1.8" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.RuntimeInformation" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.RuntimeInformation" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Management" targetFramework=".NETFramework4.5, .NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.5, .NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.5, .NETFramework4.6.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
