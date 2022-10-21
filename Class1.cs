@@ -36,7 +36,7 @@ namespace Applitools_troubleshooting
             {
                 Configuration config = new Configuration();
                 Applitools.IConfiguration configVal = config.SetIgnoreDisplacements(true)
-                    .SetApiKey("VJMt4z4djBoqW40fclJgEpLGuwGppgZ98m5wtUuWhru0110") //TODO set API key
+                    .SetApiKey("") //TODO set API key
                     .SetForceFullPageScreenshot(true).SetSaveDiffs(false).SetHideCaret(true);
 
                 Eyes.SetConfiguration(configVal);
@@ -76,8 +76,8 @@ namespace Applitools_troubleshooting
                 //REMOTE IPHONE RUN (SAUCE LABS CLOUD) -- Replicates on this!
 
                 var options = new AppiumOptions();
-                options.AddAdditionalCapability("username", "****"); //TODO - Replace w/our credentials
-                options.AddAdditionalCapability("accessKey", "****");
+                options.AddAdditionalCapability("username", ""); //TODO - Replace w/our credentials
+                options.AddAdditionalCapability("accessKey", "");
 
                 options.AddAdditionalCapability("platformName", "ios");
                 options.AddAdditionalCapability("platformVersion", "15.7");
